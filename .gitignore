@@ -1,0 +1,45 @@
+
+### Root
+.DS_Store
+
+### Logs
+*.log
+Build_Code/app.log
+
+### Secrets / env
+.env
+.env.*
+*.pem
+*.key
+
+### Python
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+winVENV/
+
+### Node / Electron
+node_modules/
+dist/
+build/
+out/
+.next/
+.turbo/
+.nx/
+coverage/
+
+### Local databases (ignore by default)
+*.db
+*.sqlite
+*.sqlite3
+
+### Keep reference DB(s) if desired
+!reference/**/AT.db
+
+### Reference toolchains (don’t commit embedded runtimes)
+reference/python10/
